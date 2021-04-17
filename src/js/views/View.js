@@ -75,7 +75,7 @@ export default class View {
     this._parentElement.insertAdjacentHTML('afterbegin', markup);
   }
 
-  renderErMessage(message = this._message) {
+  renderMessage(message = this._message) {
     const markup = `
       <div class="message">
       <div>

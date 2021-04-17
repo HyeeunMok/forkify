@@ -1,4 +1,6 @@
 import View from './view';
+// import icons from '../img/icons.svg'; // Parcel 1
+import icons from 'url:../../img/icons.svg'; // Parcel 2
 export default class PreviewView extends View {
   _generateMarkup() {
     return this._data.map(this._generateMarkupPreview).join();
@@ -21,6 +23,13 @@ export default class PreviewView extends View {
               <div class="preview__data">
                 <h4 class="preview__title">${result.title}</h4>
                 <p class="preview__publisher">${result.publisher}</p>
+                <div class="preview__user-generated ${
+                  result.key ? '' : 'hidden'
+                }">
+                  <svg>
+                  <use href="${icons}#icon-user"></use>
+                  </svg>
+                </div>
               </div>
             </a>
           </li>
