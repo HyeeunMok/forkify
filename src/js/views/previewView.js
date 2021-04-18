@@ -1,4 +1,4 @@
-import View from './view';
+import View from './View.js';
 // import icons from '../img/icons.svg'; // Parcel 1
 import icons from 'url:../../img/icons.svg'; // Parcel 2
 export default class PreviewView extends View {
