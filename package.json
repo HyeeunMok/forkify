@@ -4,16 +4,16 @@
   "description": "Recipe application",
   "node-version": "12.16.1",
   "npm-version": "7.8.0",
-  "main": "index.html",
+  "default": "index.html",
   "scripts": {
     "start": "parcel index.html",
-    "build": "parcel build index.html"
+    "build": "parcel build index.html --dist-dir ./dist"
   },
   "repository": {
     "type": "git",
     "url": "git+https://github.com/HyeeunMok/forkify.git"
   },
-  "author": "Hyeeun",
+  "author": "Hyeeun Mok",
   "license": "ISC",
   "bugs": {
     "url": "https://github.com/HyeeunMok/forkify/issues"
